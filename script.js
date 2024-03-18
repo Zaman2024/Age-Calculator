@@ -1,4 +1,4 @@
-//------- HTML Manupulation-------------
+//------- HTML Manupulation----------
 const body = document.body;
 
 body.style = `background-repeat: no-repeat;
