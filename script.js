@@ -31,6 +31,13 @@ button.setAttribute('type', 'submit');
 button.innerText = 'Submit';
 wrapper.appendChild(button);
 
+const resetBtn = document.createElement('button');
+resetBtn.setAttribute('type', 'submit');
+resetBtn.id = 'btn'
+resetBtn.innerText = 'Reset';
+wrapper.appendChild(resetBtn);
+
+
 //----------Age Calculation-----------------/
 
 function calculator() {
@@ -85,4 +92,12 @@ function calculator() {
         display.innerHTML = `Your Age is : ${y2 - y1}Year, ${m2 - m1} Month, ${d2 - d1} Days`;
     }
 }
+
+const reset = function () {
+    document.querySelector('input').value = null;
+    display.innerHTML = '';
+}
+
 button.addEventListener('click', calculator);
+
+resetBtn.addEventListener('click', reset);
