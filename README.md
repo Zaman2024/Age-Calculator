@@ -1,2 +1,2 @@
-# Age calculator01
+# Age calculator
 # Basic javaScript Project-02
